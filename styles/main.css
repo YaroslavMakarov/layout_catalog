@@ -1,12 +1,12 @@
-body {
-  margin: 0; }
-
 html {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
   line-height: 13px; }
+
+body {
+  margin: 0; }
 
 .header {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -28,19 +28,18 @@ html {
   position: relative;
   top: 1px; }
 
-.nav-bar--list {
+.nav-bar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .nav-bar__list > :last-child {
+    margin-right: 0; }
 
-.nav-bar--item {
+.nav-bar__item {
   list-style-type: none;
   margin-right: 20px; }
 
-.nav-bar--list > :last-child {
-  margin-right: 0; }
-
-.nav-bar--link {
+.nav-bar__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,25 +50,24 @@ html {
   color: black;
   position: relative;
   padding: 23px 0; }
+  .nav-bar__link:hover {
+    color: #00acdc; }
 
-.nav-bar--link:hover {
+.nav-bar__is-active {
   color: #00acdc; }
-
-.is-active {
-  color: #00acdc; }
-
-.is-active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: #00acdc;
-  border-radius: 8px; }
+  .nav-bar__is-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #00acdc;
+    border-radius: 8px; }
 
 .main-content {
+  position: relative;
   margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,9 +81,8 @@ html {
           justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start; }
-
-.main-content > :nth-child(4n+4) {
-  margin-right: 0; }
+  .main-content > :nth-child(4n+4) {
+    margin-right: 0; }
 
 .card {
   width: 200px;
@@ -103,108 +100,93 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 48px 50px 0; }
-
-.card__photo {
-  background-image: url("../images/imac.jpeg");
-  background-size: 160px 134px;
-  width: 160px;
-  -webkit-box-flex: 134px;
-      -ms-flex: 134px 0 0px;
-          flex: 134px 0 0;
-  margin: 30px 19px 45px;
-  background-repeat: no-repeat; }
-
-.card__description {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  margin: 0 14px 5px; }
-
-.card__detail-code {
-  margin: 0 14px 17px; }
-
-.card__rating {
-  margin: 0 14px 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.card__rating-stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.card__star {
-  width: 15px;
-  height: 15px;
-  background-image: url("../images/star-active.svg");
-  background-repeat: no-repeat;
-  margin-left: 4px; }
-
-.card__rating :nth-child(5) {
-  background-image: url("../images/star.svg");
-  background-repeat: no-repeat; }
-
-.card__star-first,
-.card__rating-reviews {
-  margin: 0; }
-
-.card__price {
-  margin: 0 14px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
-
-.card__price-cost {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px; }
-
-.card__buy-button {
-  width: 170px;
-  height: 40px;
-  background-color: #00acdc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 5px;
-  margin: 0 14px 15px; }
-
-.card__buy-link {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  color: white;
-  padding: 12px 58px; }
-
-.card__buy-button:hover {
-  line-height: 16px;
-  color: #00acdc;
-  background: #fff;
-  border: 1px solid #00acdc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.card__buy-link:hover {
-  color: #00acdc; }
+  .card__photo {
+    background-image: url("../images/imac.jpeg");
+    background-size: 160px 134px;
+    width: 160px;
+    -webkit-box-flex: 134px;
+        -ms-flex: 134px 0 0px;
+            flex: 134px 0 0;
+    margin: 30px 19px 45px;
+    background-repeat: no-repeat; }
+  .card__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 14px 5px; }
+  .card__detail-code {
+    margin: 0 14px 17px; }
+  .card__rating {
+    margin: 0 14px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .card__rating :nth-child(5) {
+      background-image: url("../images/star.svg");
+      background-repeat: no-repeat; }
+  .card__rating-stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .card__star {
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/star-active.svg");
+    background-repeat: no-repeat;
+    margin-left: 4px; }
+  .card__star-first, .card__rating-reviews {
+    margin: 0; }
+  .card__price {
+    margin: 0 14px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .card__price-cost {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px; }
+  .card__buy-button {
+    width: 170px;
+    height: 40px;
+    background-color: #00acdc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    margin: 0 14px 15px; }
+    .card__buy-button:hover {
+      line-height: 16px;
+      color: #00acdc;
+      background: #fff;
+      border: 1px solid #00acdc;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+  .card__buy-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 12px 58px; }
+    .card__buy-link:hover {
+      color: #00acdc; }
 
 /*# sourceMappingURL=main.css.map */
