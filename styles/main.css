@@ -87,7 +87,7 @@ html {
 .main-content > :nth-child(4n+4) {
   margin-right: 0; }
 
-.wrapper-product-card {
+.card {
   width: 200px;
   height: 403px;
   display: -webkit-box;
@@ -104,7 +104,7 @@ html {
           box-sizing: border-box;
   margin: 0 48px 50px 0; }
 
-.product-photo-picture {
+.card__photo {
   background-image: url("../images/imac.jpeg");
   background-size: 160px 134px;
   width: 160px;
@@ -114,16 +114,16 @@ html {
   margin: 30px 19px 45px;
   background-repeat: no-repeat; }
 
-.product-description {
+.card__description {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   margin: 0 14px 5px; }
 
-.product-detail-code {
+.card__detail-code {
   margin: 0 14px 17px; }
 
-.rating {
+.card__rating {
   margin: 0 14px 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,34 +135,27 @@ html {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-/*.rating-star {*/
-/*  margin-left: 4px;*/
-/*  width: 15px;*/
-/*  height: 15px;*/
-/*}*/
-.rating__star {
+.card__rating-stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.star {
+.card__star {
   width: 15px;
   height: 15px;
   background-image: url("../images/star-active.svg");
   background-repeat: no-repeat;
   margin-left: 4px; }
 
-.rating :nth-child(5) {
+.card__rating :nth-child(5) {
   background-image: url("../images/star.svg");
   background-repeat: no-repeat; }
 
-.rating :first-child {
+.card__star-first,
+.card__rating-reviews {
   margin: 0; }
 
-.rating-reviews {
-  margin: 0; }
-
-.price {
+.card__price {
   margin: 0 14px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,12 +167,12 @@ html {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
-.price-cost {
+.card__price-cost {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px; }
 
-.buy-button {
+.card__buy-button {
   width: 170px;
   height: 40px;
   background-color: #00acdc;
@@ -195,16 +188,15 @@ html {
   border-radius: 5px;
   margin: 0 14px 15px; }
 
-.buy-button-link {
+.card__buy-link {
   font-weight: bold;
-  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
   color: white;
   padding: 12px 58px; }
 
-.buy-button:hover {
+.card__buy-button:hover {
   line-height: 16px;
   color: #00acdc;
   background: #fff;
@@ -212,7 +204,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.buy-button-link:hover {
+.card__buy-link:hover {
   color: #00acdc; }
 
 /*# sourceMappingURL=main.css.map */
