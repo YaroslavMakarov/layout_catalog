@@ -1,0 +1,14 @@
+.stars__star {
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  margin-left: 4px; }
+
+.stars :first-child {
+  margin: 0; }
+
+.stars--0 :nth-child(-n+0), .stars--1 :nth-child(-n+1), .stars--2 :nth-child(-n+2), .stars--3 :nth-child(-n+3), .stars--4 :nth-child(-n+4), .stars--5 :nth-child(-n+5) {
+  background-image: url("../images/star-active.svg"); }
+
+/*# sourceMappingURL=stars.css.map */

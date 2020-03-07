@@ -1,0 +1,38 @@
+.nav-bar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav-bar__list > :last-child {
+    margin-right: 0; }
+
+.nav-bar__item {
+  list-style-type: none;
+  margin-right: 20px;
+  position: relative; }
+
+.nav-bar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  line-height: 60px;
+  font-weight: 500; }
+  .nav-bar__link:hover {
+    color: #00acdc; }
+
+.nav-bar__link-active {
+  color: #00acdc; }
+  .nav-bar__link-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #00acdc;
+    border-radius: 8px; }
+
+/*# sourceMappingURL=header-nav-bar.css.map */
