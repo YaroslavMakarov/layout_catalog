@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  transition: background-color 1s;
 
   &:hover {
     line-height: 16px;
@@ -26,6 +27,7 @@
     line-height: $button-height;
     text-decoration: none;
     color: white;
+    transition: color 1s;
   }
 
   &__buy-link:hover {
