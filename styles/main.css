@@ -76,7 +76,9 @@ html {
   color: black;
   font-size: 12px;
   line-height: 60px;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   .nav-bar__link:hover {
     color: #00acdc; }
 
