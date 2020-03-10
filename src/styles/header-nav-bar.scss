@@ -2,27 +2,23 @@
 
 .nav-bar {
   &__list {
-    display: flex;
-
-    & > :last-child {
-      margin-right: 0;
-    }
+    display: grid;
+    grid-template-columns: repeat($countHeaderNavLink, auto);
+    grid-column-gap: 20px;
   }
 
   &__item {
     list-style-type: none;
-    margin-right: 20px;
-    position: relative;
   }
 
   &__link {
-    display: flex;
     text-decoration: none;
     color: black;
     font-size: 12px;
     line-height: $header-height;
     font-weight: 500;
     transition: 0.3s;
+    display: grid;
 
     &:hover {
       color: #00acdc;
@@ -31,6 +27,7 @@
 
   &__link-active {
     color: #00acdc;
+    position: relative;
 
     &::after {
       content: "";
