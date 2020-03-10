@@ -2,12 +2,12 @@
 
 .main-content {
   margin: 50px auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-content: flex-start;
   &__cards-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat($count-cards-row, auto);
     justify-content: space-between;
     align-content: space-between;
     width: ($horizontal-margin+$card-width) * 4 - $horizontal-margin;

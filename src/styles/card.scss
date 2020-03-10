@@ -1,8 +1,7 @@
 .card {
   width: 200px;
   height: 403px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   background-color: white;
@@ -34,13 +33,15 @@
 
   &__rating {
     margin: 0 0 18px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
-    align-items: flex-start;
+    //align-items: flex-start;
   }
 
   &__rating-stars {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
   }
 
   &__rating-link {
@@ -50,7 +51,8 @@
 
   &__price {
     margin: 0 0 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: baseline;
   }
