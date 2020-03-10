@@ -1,13 +1,7 @@
 .card {
   width: 200px;
   height: 403px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   background-color: white;
@@ -38,27 +32,21 @@
     margin: 0 0 17px; }
   .card__rating {
     margin: 0 0 18px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+            justify-content: space-between; }
   .card__rating-stars {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(5, auto); }
   .card__rating-link {
     text-decoration: none;
     color: black; }
   .card__price {
     margin: 0 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
